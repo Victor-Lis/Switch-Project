@@ -13,6 +13,8 @@ body{
 
     min-height: 100svh;
     width: 100%;
+
+    background-color: rgb(255,255,189);
 }
 
 .switch{

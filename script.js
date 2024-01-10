@@ -30,7 +30,7 @@ internSwitch.addEventListener("click", () => {
 
                 if (background > 0) {
                     background -= 1
-                    body.style.backgroundColor = `rgb(${background},${background},${background})`
+                    body.style.backgroundColor = `rgb(${background},${background},${background / 1.35})`
                 } else {
                     clearInterval(interval)
                     canSwitch = true
@@ -55,8 +55,7 @@ internSwitch.addEventListener("click", () => {
 
                 if (background < 255) {
                     background += 1
-                    console.log(`rgb(${background},${background},${Math.round(background / 5)})`)
-                    body.style.backgroundColor = `rgb(${background},${background},${Math.round(background / 1.5)})`
+                    body.style.backgroundColor = `rgb(${background},${background},${Math.round(background / 1.35)})`
                 } else {
                     clearInterval(interval)
                     canSwitch = true
